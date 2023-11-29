@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     width: 80%;
     margin: autos;
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
+
 /* Buttons start */
-.btn{
+.btn {
     display: inline-block;
     font-size: 14px;
     padding: 12px 21px;
@@ -19,7 +22,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.btn.btn-red{
+.btn.btn-red {
     background-color: #f75a63;
 }
 
@@ -116,7 +119,7 @@
     /* background-position: center; */
 }
 
-.banner .banner-content{
+.banner .banner-content {
     color: #fff;
     width: 100%;
     height: 100%;
@@ -126,31 +129,34 @@
     flex-direction: column;
 }
 
-.banner .banner-content h1{
+.banner .banner-content h1 {
     font-size: 72px;
     width: 579px;
     text-align: center;
 }
 
-.banner .banner-content .banner-info{
+.banner .banner-content .banner-info {
     margin: 32px 0;
     display: flex;
     gap: 37px;
 }
-.banner .banner-content .banner-info span i{
+
+.banner .banner-content .banner-info span i {
     color: #FE4A51;
 }
+
 /* Banner end */
 
 
 
 /* Food card start */
-.food-card{
+.food-card {
     position: relative;
     height: 200px;
 }
-.food-card .container{
-   
+
+.food-card .container {
+
     width: 80%;
     margin: auto;
     display: flex;
@@ -161,50 +167,51 @@
     left: 10%;
 }
 
-.food-card .container .food-card-content{
+.food-card .container .food-card-content {
     width: 25%;
     height: 230px;
     padding: 5px;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
     background-color: #fff;
-    transition:  0.5s ease;
+    transition: 0.5s ease;
 }
 
 
-.food-card .container .food-card-content:hover{
+.food-card .container .food-card-content:hover {
     cursor: pointer;
     padding: 5px;
-    background: linear-gradient(0deg, rgba(198, 9, 9, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%),lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(198, 9, 9, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), lightgray 50% / cover no-repeat;
 }
 
-.food-card .container .food-card-content .food-img{
+.food-card .container .food-card-content .food-img {
     width: 100%;
     height: 100%;
 }
+
 /* Food card end */
 
 
 /* Content area start */
-.content{
+.content {
     width: 80%;
     margin: auto;
 }
 
 .content .container {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.content .container .content-area{
+.content .container .content-area {
     width: 65%;
 }
 
-.content .container .sidebar{
+.content .container .sidebar {
     width: 30%;
 }
 
-.content .container .content-area .popular h2{
+.content .container .content-area .popular h2 {
     font-size: 36px;
     color: #2D2D2D;
     font-weight: 700;
@@ -212,31 +219,154 @@
     line-height: 150.9%;
 }
 
-.content .container .content-area .popular .row .blog-card{
+.content .container .content-area .popular .row .blog-card {
     width: 47%;
     height: 250px;
-    margin: 5px;
+    margin: 15px 0;
     background-color: #f75a63;
 }
 
-.content .container .content-area .popular .row{
+.content .container .content-area .popular .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.content .container .content-area .popular .row .blog-card:nth-child(1){
-    width: 67%;
+
+.content .container .content-area .popular .row .blog-card {
+    height: 326px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.content .container .content-area .popular .row .blog-card:nth-child(2){
-    width: 30%;
+.content .container .content-area .popular .row .blog-card:nth-child(1) {
+    width: 60%;
+    background-image: url("../img/chicken.jpg");
 }
 
-.content .container .content-area .popular .row .blog-card:nth-child(3){
-    width: 30%;
+.content .container .content-area .popular .row .blog-card:nth-child(2) {
+    width: 37%;
+    background-image: url("../img/asparagus.jpeg");
 }
 
-.content .container .content-area .popular .row .blog-card:nth-child(4){
-    width: 67%;
+.content .container .content-area .popular .row .blog-card:nth-child(3) {
+    width: 37%;
+    background-image: url("../img/salad-1.jpeg");
 }
+
+.content .container .content-area .popular .row .blog-card:nth-child(4) {
+    width: 60%;
+    background-image: url("../img/salad.jpeg");
+}
+
+.content .container .content-area .popular .row .blog-card .opacity {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.content .container .content-area .popular .row .blog-card .opacity .blog-title {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100.9%;
+    margin: 0 15px;
+}
+
+.content .container .content-area .popular .row .blog-card .opacity .blog-card-info {
+    margin: 15px 33px 25px 33px;
+}
+
+.content .container .content-area .popular .row .blog-card .opacity .blog-card-info span {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100.9%;
+    margin: 5px 10px;
+}
+
+.content .container .content-area .popular .row .blog-card .opacity .blog-card-info span i {
+    color: #FE4A51;
+}
+
 /* Content area end */
+
+/* Pagination start */
+.pagination {
+    margin: 50px 0;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination ul li {
+    list-style: none;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108.9%;
+}
+
+.pagination ul li a:hover {
+    color: #FE4A51;
+}
+
+.pagination ul li a.active {
+    color: #FE4A51;
+}
+
+/* Pagination end */
+
+/* Category start */
+.categories {
+    width: 100%;
+    height: 257px;
+    background-color: #FFE5E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px 25px;
+}
+
+.categories .column {
+    text-align: center;
+    width: 20%;
+}
+
+.categories .column img {
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.categories .column p {
+    color: #2D2D2D;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.9%;
+    margin: 21px 0;
+}
+
+/* Category end */
